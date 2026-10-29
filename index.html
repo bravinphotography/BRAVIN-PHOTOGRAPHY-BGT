@@ -1,21 +1,292 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-  <title>Bravin Photography BGT</title>
-  <style>
-    body {
-      background: #111;
-      color: white;
-      text-align: center;
-      font-family: Arial;
-      padding-top: 100px;
-    }
-    h1 { color: #d9b56d; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bravin Photography BGT | Wedding & Cinematic Films</title>
+<meta name="description" content="Bravin Photography BGT - Wedding Photography, Cinematic Videography, Pre-Wedding and Premium Albums. Book your event online.">
+
+<style>
+:root {
+  --gold: #d8b46a;
+  --black: #101010;
+  --panel: #1b1b1b;
+  --white: #f7f4ed;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #40341f;
+}
+.logo { color: var(--gold); font-weight: bold; font-size: 21px; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; font-size: 14px; }
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 490px;
+  padding: 100px 20px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  background:
+    linear-gradient(#000a, #000b),
+    radial-gradient(ellipse at center, #574324, #17130d 65%, #101010);
+}
+.eyebrow { color: var(--gold); letter-spacing: 4px; font-size: 12px; }
+h1 { font-size: clamp(36px, 6vw, 68px); margin: 18px 0; }
+h2 { font-size: clamp(27px, 4vw, 38px); }
+.gold { color: var(--gold); }
+.hero p { color: #ddd; line-height: 1.8; }
+.btn {
+  display: inline-block;
+  padding: 14px 23px;
+  margin: 8px 5px;
+  background: var(--gold);
+  color: #111;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn.outline { background: transparent; color: var(--gold); }
+section { padding: 65px 7%; text-align: center; }
+.sub { color: #bbb; line-height: 1.8; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+  text-align: left;
+}
+.card {
+  background: var(--panel);
+  padding: 25px;
+  border: 1px solid #493b25;
+  border-radius: 7px;
+}
+.card .symbol { font-size: 30px; }
+.card h3 { color: var(--gold); }
+.card p { color: #ccc; line-height: 1.7; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.photo {
+  min-height: 200px;
+  display: grid;
+  place-content: center;
+  padding: 15px;
+  color: var(--gold);
+  border: 1px solid #4b3c26;
+  background: linear-gradient(145deg, #342719, #151515);
+}
+form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+label { color: #ddd; font-size: 14px; }
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 13px;
+  background: #1b1b1b;
+  color: white;
+  border: 1px solid #55462e;
+  border-radius: 4px;
+  font: inherit;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 1px solid var(--gold);
+}
+.note { color: #aaa; font-size: 13px; line-height: 1.7; }
+footer {
+  padding: 30px 7%;
+  border-top: 1px solid #40341f;
+  text-align: center;
+  color: #aaa;
+}
+@media(max-width: 520px) {
+  header { justify-content: center; }
+  nav { justify-content: center; gap: 12px; }
+  section { padding: 48px 5%; }
+}
+</style>
 </head>
+
 <body>
-  <h1>Bravin Photography BGT</h1>
-  <p>Wedding | Photography | Videography | Albums</p>
-  <h2>Online Booking Coming Soon</h2>
+<header>
+  <div class="logo">BRAVIN PHOTOGRAPHY BGT</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="eyebrow">YOUR STORY · OUR ART</div>
+  <h1>Bravin Photography <span class="gold">BGT</span></h1>
+  <p>Wedding Photography · Cinematic Films · Premium Albums</p>
+  <p>आपके सबसे खास पलों को खूबसूरत यादों में बदलते हैं।</p>
+  <div>
+    <a class="btn" href="#booking">Book Your Event</a>
+    <a class="btn outline" href="#services">Explore Services</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="eyebrow">WHAT WE DO</div>
+  <h2>Our <span class="gold">Services</span></h2>
+  <p class="sub">आपके हर खास मौके के लिए फोटोग्राफी और वीडियो सेवाएँ।</p>
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">📸</div>
+      <h3>Wedding Photography</h3>
+      <p>शादी के खास पलों, रस्मों और परिवार की यादगार तस्वीरें।</p>
+    </article>
+    <article class="card">
+      <div class="symbol">🎬</div>
+      <h3>Cinematic Videography</h3>
+      <p>आपके इवेंट की कहानी को सिनेमैटिक अंदाज में कैद करें।</p>
+    </article>
+    <article class="card">
+      <div class="symbol">📖</div>
+      <h3>Premium Albums</h3>
+      <p>आपकी तस्वीरों के लिए खूबसूरत डिजाइन वाले प्रिंटेड एल्बम।</p>
+    </article>
+    <article class="card">
+      <div class="symbol">💍</div>
+      <h3>Pre-Wedding & Events</h3>
+      <p>प्री-वेडिंग, बर्थडे और दूसरे खास इवेंट्स की शूटिंग।</p>
+    </article>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="eyebrow">OUR WORK</div>
+  <h2>Photo <span class="gold">Gallery</span></h2>
+  <p class="sub">यहाँ अपनी असली वेडिंग और सिनेमैटिक तस्वीरें जोड़ें।</p>
+  <div class="gallery">
+    <div class="photo">Wedding Photography</div>
+    <div class="photo">Cinematic Stories</div>
+    <div class="photo">Pre-Wedding Shoots</div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="eyebrow">LET'S PLAN YOUR EVENT</div>
+  <h2>Online <span class="gold">Booking</span></h2>
+  <p class="sub">जानकारी भरें। हम तारीख और पैकेज की पुष्टि करेंगे।</p>
+
+  <form id="bookingForm">
+    <label>पूरा नाम
+      <input name="name" required maxlength="100" placeholder="आपका नाम">
+    </label>
+    <label>मोबाइल नंबर
+      <input name="phone" type="tel" inputmode="numeric"
+        pattern="[6-9][0-9]{9}" maxlength="10" required
+        placeholder="10 अंकों का मोबाइल नंबर">
+    </label>
+    <label>इवेंट / सर्विस
+      <select name="service" required>
+        <option value="">सर्विस चुनें</option>
+        <option>Wedding Photography</option>
+        <option>Wedding Videography</option>
+        <option>Photography + Videography Combo</option>
+        <option>Wedding Album</option>
+        <option>Pre-Wedding</option>
+        <option>Birthday / Other Event</option>
+      </select>
+    </label>
+    <label>इवेंट की तारीख
+      <input name="date" type="date" required>
+    </label>
+    <label>इवेंट का स्थान
+      <input name="location" required maxlength="150"
+        placeholder="गाँव / शहर / वेन्यू">
+    </label>
+    <label>बजट या पैकेज की जानकारी
+      <select name="budget">
+        <option value="">बजट चुनें (वैकल्पिक)</option>
+        <option>₹5,000 तक</option>
+        <option>₹5,000 – ₹10,000</option>
+        <option>₹10,000 – ₹25,000</option>
+        <option>₹25,000 से अधिक</option>
+        <option>पहले चर्चा करना है</option>
+      </select>
+    </label>
+    <label>अतिरिक्त जानकारी
+      <textarea name="details" rows="3"
+        placeholder="कितने दिन की शूटिंग, एल्बम साइज आदि"></textarea>
+    </label>
+    <button class="btn" type="submit">WhatsApp पर Booking Request भेजें</button>
+    <p id="status" class="note" aria-live="polite"></p>
+  </form>
+  <p class="note">बुकिंग रिक्वेस्ट भेजना अंतिम बुकिंग की पुष्टि नहीं है। तारीख और एडवांस की पुष्टि सीधे की जाएगी।</p>
+</section>
+</main>
+
+<footer>
+  <p class="gold">BRAVIN PHOTOGRAPHY BGT</p>
+  <p>Wedding · Photography · Videography · Albums</p>
+  <p>© <span id="year"></span> Bravin Photography BGT</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // नीचे अपने WhatsApp नंबर के 10 अंक देश कोड के बिना डालें।
+  const WHATSAPP_NUMBER = "YOUR_NUMBER";
+
+  if (!/^[6-9][0-9]{9}$/.test(WHATSAPP_NUMBER)) {
+    document.getElementById("status").textContent =
+      "WhatsApp बुकिंग चालू करने के लिए कोड में YOUR_NUMBER की जगह अपना WhatsApp नंबर डालें।";
+    return;
+  }
+
+  const f = new FormData(this);
+  const message = [
+    "BRAVIN PHOTOGRAPHY BGT - Booking Request",
+    "Name: " + f.get("name"),
+    "Mobile: " + f.get("phone"),
+    "Service: " + f.get("service"),
+    "Event Date: " + f.get("date"),
+    "Location: " + f.get("location"),
+    "Budget: " + (f.get("budget") || "Not specified"),
+    "Details: " + (f.get("details") || "None")
+  ].join("\n");
+
+  window.open(
+    "https://wa.me/91" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message),
+    "_blank",
+    "noopener"
+  );
+});
+</script>
 </body>
 </html>
