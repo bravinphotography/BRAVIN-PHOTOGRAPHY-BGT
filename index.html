@@ -297,23 +297,26 @@ fetch(SUPABASE_URL + "/rest/v1/bookings", {
   }
   document.getElementById("status").textContent =
     "Booking details database mein save ho gayi hain.";
+  const message = [
+  "BRAVIN PHOTOGRAPHY BGT - Booking Request",
+  "Name: " + f.get("name"),
+  "Mobile: " + f.get("phone"),
+  "Service: " + f.get("service"),
+  "Event Date: " + f.get("date"),
+  "Location: " + f.get("location"),
+  "Budget: " + (f.get("budget") || "Not specified"),
+  "Details: " + (f.get("details") || "None")
+].join("\n");
+
+window.location.href =
+  "https://wa.me/91" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent(message);
 })
 .catch(error => {
   console.error(error);
   document.getElementById("status").textContent =
     "Booking save nahi hui. Please dobara try karein.";
 });
-
-  const message = [
-    "BRAVIN PHOTOGRAPHY BGT - Booking Request",
-    "Name: " + f.get("name"),
-    "Mobile: " + f.get("phone"),
-    "Service: " + f.get("service"),
-    "Event Date: " + f.get("date"),
-    "Location: " + f.get("location"),
-    "Budget: " + (f.get("budget") || "Not specified"),
-    "Details: " + (f.get("details") || "None")
-  ].join("\n");
 
   window.location.href =
   "https://wa.me/91" + WHATSAPP_NUMBER +
